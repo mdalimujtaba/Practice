@@ -1,0 +1,63 @@
+#mainbox{
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+#cardbox{
+    /* border: 1px solid red; */
+    padding: 20px;
+    width: 350px;
+    height: 200px;
+    transform-style: preserve-3d;
+    transition: 1s;
+    /* position: relative; */
+}
+/* #cardbox:hover{
+    transform: rotateY(180deg);
+} */
+#frontcard{
+    width: 350px;
+    height: 200px;
+    background: lightblue;
+    border-radius: 10px;
+    position: absolute;
+    backface-visibility: hidden;
+    /* transform: rotateY(360deg); */
+
+}
+#backcard{
+    width: 350px;
+    height: 200px;
+    background: rgb(19, 154, 199);
+    border-radius: 10px;
+    position:absolute;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+
+}
+#backcvv{
+    padding: 20px;
+}
+
+h4{
+    text-align: center;
+    padding-top: 10px;
+}
+h3{
+    text-align: center;
+    margin-top: 100px;
+    
+}
+#formbox{
+border: 1px solid black;
+ width: 250px;
+ height: auto;
+ padding: 20px;
+}
+input{
+    margin-top: 10px;
+    height: 30px;
+    width: 98%;
+}
