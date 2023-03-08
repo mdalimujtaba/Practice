@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>apply job</title>
+    <link rel="stylesheet" href="appliedJob.css">
+</head>
+<body>
+    <div id="navbar">
+        <a href="index.html"><h2>Home</h1></a>
+        <a href="appliedJob.html"><h2>Applied Jobs</h1></a>
+        <a href="bookmarks.html"><h2>Bookmarks</h1></a>
+    </div>
+    <select name="sortByname" id="sortByname" onChange="handlesortbyName()">
+        <option value="">Sort By Name</option>
+        <option value="asc">Ascending</option>
+        <option value="desc">Descending</option>
+    </select>
+    <select name="sortBysalary" id="sortBysalary" onChange="handlesortbySalary()">
+        <option value="">Sort By Salary</option>
+        <option value="htl">High to Low</option>
+        <option value="lth">Low to High</option>
+    </select>
+    <select name="filterPosition" id="filterPosition" onChange="handleFilter()">
+        <option value="">Filter Position</option>
+        <option value="FSD">FSD</option>
+        <option value="frontend">Frontend</option>
+        <option value="backend">Backend</option>
+    </select>
+    <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Job applied</th>
+            <th>Salary expected (In LPA)</th>
+            <th>Add to bookmark</th>
+          </tr>
+        </thead>
+        <tbody id="body">
+          <!-- Append your output to tbody -->
+        </tbody>
+      </table>
+</body>
+</html>
+<script src="appliedJob.js"></script>
